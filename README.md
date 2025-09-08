@@ -161,14 +161,18 @@ python main.py
 Submit to GitHub frequently! The version submitted last before the due date will be the one that is graded. 
 
 ### Git Workflow
+
 ```bash
+# Add your completed files (can also use `git add .`)
+git add src/main.py writing/reflection.md
+```
 
-# Add your completed files
-git add src/main.py writing/reflection.md or git add .
-
+```bash
 # Commit with a descriptive message
 git commit -m "Complete sensor simulation dashboard"
+```
 
+```bash
 # Push to GitHub
 git push
 ```
