@@ -190,30 +190,6 @@ setup: |
       options:
         count: 300
         exact: false
-    - description: Include discussion of Python concepts in IoT context
-      check: MatchFileFragment
-      options:
-        fragment: "Python"
-        count: 2
-        exact: false
-    - description: Include discussion of sensor data and IoT concepts
-      check: MatchFileFragment
-      options:
-        fragment: "sensor"
-        count: 10
-        exact: false
-    - description: Include discussion of preparing for Pico 2W next week
-      check: MatchFileFragment
-      options:
-        fragment: "Pico 2W"
-        count: 1
-        exact: false
-    - description: Include discussion of peer interaction and lab session learning
-      check: MatchFileFragment
-      options:
-        fragment: "lab session"
-        count: 1
-        exact: false
 
 # ============================================================================
 # PROGRAM EXECUTION TESTING (Bullet Point 1: Program runs without errors)
@@ -230,6 +206,46 @@ setup: |
     command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
     count: 25
     exact: false
+
+# ============================================================================
+# CODE QUALITY CHECKS - Verify specific programming concepts in main.py
+# ============================================================================
+
+# Check for type conversion (casting) in source code
+- description: Use int() function for type conversion in main.py
+  check: MatchFileFragment
+  options:
+    fragment: " int("
+    count: 5
+    exact: false
+    file: src/main.py
+
+# Check for temperature conversion formula in source code  
+- description: Include temperature conversion formula in main.py
+  check: MatchFileFragment
+  options:
+    fragment: "* 5 / 9"
+    count: 1
+    exact: false
+    file: src/main.py
+
+# Check for division calculations in source code
+- description: Include division calculations for sensor analysis in main.py
+  check: MatchFileFragment
+  options:
+    fragment: "/ monitoring_hours"
+    count: 2
+    exact: false
+    file: src/main.py
+
+# Check for string method usage in source code
+- description: Use .upper() method for string operations in main.py
+  check: MatchFileFragment
+  options:
+    fragment: ".upper()"
+    count: 2
+    exact: false
+    file: src/main.py
 
 # Check for specific IoT output content when program runs
 # These tests use the same automated inputs as above to verify your program
