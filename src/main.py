@@ -14,16 +14,13 @@ Date: September 2025
 # WELCOME SECTION - Basic print statements and program structure
 # =============================================================================
 
-# Create a welcome message for the Digital Sensor Simulation Dashboard
-# Use print() statements with decorative characters or emoji
-# This demonstrates basic output + introduces IoT concepts
+# TODO: Create a welcome message for the Digital Sensor Simulation Dashboard
+# TODO: Use print() statements with decorative characters or emoji
 
-print("🔬 DIGITAL SENSOR SIMULATION DASHBOARD 🔬")
-print("==========================================")
-print()
-print("🤖 Welcome to IoT Sensor Simulation!")
-print("This program simulates the sensor readings we'll collect with the Pico 2W this semester.")
-print()
+# TODO: Print dashboard title with emojis
+# TODO: Print separator line
+# TODO: Print welcome message
+# TODO: Print description about sensor simulation
 
 # =============================================================================
 # SENSOR DATA COLLECTION - input() and Type conversion
@@ -33,8 +30,8 @@ print()
 # This simulates setting up an IoT device and taking sensor readings
 # Demonstrates input() and type conversion
 
-print("📊 SIMULATED SENSOR SETUP")
-print("==========================================")
+# TODO: Print sensor setup section header with emoji
+# TODO: Print separator line
 
 # Device setup information (keep as strings - string data types)
 device_name = ""        # TODO: Get device name from user using input()
@@ -91,7 +88,7 @@ peak_hour_detections = 0 # TODO: Calculate motion_count // 4 (simulate peak acti
 # This simulates how IoT devices determine and display operational status
 
 # Temperature status (string operations for IoT status)
-temp_status = ""     # TODO: Set to "NORMAL" using string assignment
+temp_status = ""     # TODO: Set to "normal" using string assignment
 temp_status_upper = "" # TODO: Convert temp_status to uppercase using .upper()
 # Example: "normal".upper() becomes "NORMAL" - useful for professional displays
 
@@ -111,60 +108,57 @@ device_id = ""       # TODO: Create device_initials + "_" + location + "_" + str
 # IoT DASHBOARD OUTPUT - print() and string formatting
 # =============================================================================
 
-# Display the professional sensor monitoring dashboard
-# This simulates real IoT device dashboard displays
+# TODO: Display the professional sensor monitoring dashboard
+# TODO: This simulates real IoT device dashboard displays
 
-print("==========================================")
-print("📊 " + device_name.upper() + " - SENSOR DATA ANALYSIS")
-print("==========================================")
-print()
+# TODO: Print separator line
+# TODO: Print section header with device name in uppercase
+# TODO: Print separator line
+# TODO: Print blank line for spacing
 
-# Temperature Sensor Section (organized output, displaying calculations)
-print("🌡️ TEMPERATURE ANALYSIS:")
+# TODO: Temperature Sensor Section (organized output, displaying calculations)
+# TODO: Print "🌡️ TEMPERATURE ANALYSIS:" header
 # TODO: Print temperature_f, temperature_c (rounded to 1 decimal), temp_status_upper, hours_above_75
-print()
+# TODO: Print blank line
 
-# Light Sensor Section (displaying calculated sensor values)
-print("💡 LIGHT SENSOR ANALYSIS:")
+# TODO: Light Sensor Section (displaying calculated sensor values)
+# TODO: Print "💡 LIGHT SENSOR ANALYSIS:" header
 # TODO: Print light_level, light_status, daylight_percentage (rounded), avg_hourly_light (rounded)
-print()
+# TODO: Print blank line
 
-# Moisture Sensor Section (IoT plant monitoring display)
-print("💧 MOISTURE SENSOR ANALYSIS:")
+# TODO: Moisture Sensor Section (IoT plant monitoring display)
+# TODO: Print "💧 MOISTURE SENSOR ANALYSIS:" header
 # TODO: Print moisture_percent, moisture_status, watering_needed, days_since_watering
-print()
+# TODO: Print blank line
 
-# Motion Sensor Section (security/activity monitoring display)
-print("🏃 MOTION SENSOR ANALYSIS:")
+# TODO: Motion Sensor Section (security/activity monitoring display)
+# TODO: Print "🏃 MOTION SENSOR ANALYSIS:" header
 # TODO: Print motion_count, motion_per_hour (rounded), peak_hour_detections
-print()
+# TODO: Print blank line
 
-# IoT Alerts and Recommendations (smart device decision making)
-print("🚨 SENSOR ALERTS & RECOMMENDATIONS:")
+# TODO: IoT Alerts and Recommendations (smart device decision making)
+# TODO: Print "🚨 SENSOR ALERTS & RECOMMENDATIONS:" header
 # TODO: Print alert level, status message, next check time, device_id
-print()
+# TODO: Print blank line
 
-# Closing Section (program conclusion + bridge to future work)
-print("==========================================")
-print("Thanks for using the Sensor Dashboard!")
-print("This semester: We'll collect REAL sensor data with the Pico 2W! 🎛️")
-print("Generated on September 7, 2025")
-print("==========================================")
+# TODO: Closing Section (program conclusion)
+# TODO: Print separator line
+# TODO: Print thank you message
+# TODO: Print generated date
+# TODO: Print separator line
 
 # =============================================================================
-# BONUS IoT FEATURES (OPTIONAL) - Prepare for semester's hardware work
+# BONUS IoT FEATURES (OPTIONAL) 
 # =============================================================================
 
-# Additional sensor analysis - Energy efficiency calculation
-print()
-print("⚡ BONUS: ENERGY EFFICIENCY ANALYSIS:")
+# TODO: Additional sensor analysis - Energy efficiency calculation
+# TODO: Print blank line
+# TODO: Print "⚡ BONUS: ENERGY EFFICIENCY ANALYSIS:" header
 # TODO: Calculate energy_rating using (light_level/10 + moisture_percent + (100 - motion_count*5)) / 3
 # TODO: Print energy_rating (rounded) and efficiency_status
 
-# Multi-room comparison simulation
-print()
-print("🏠 BONUS: ROOM OPTIMIZATION SUGGESTIONS:")
+# TODO: Multi-room comparison simulation
+# TODO: Print blank line
+# TODO: Print "🏠 BONUS: ROOM OPTIMIZATION SUGGESTIONS:" header
 # TODO: Calculate total_score = temperature_f + light_level + moisture_percent
 # TODO: Print total_score and recommendation message
-
-# Add your bonus IoT features here:
