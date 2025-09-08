@@ -22,7 +22,7 @@ print("🔬 DIGITAL SENSOR SIMULATION DASHBOARD 🔬")
 print("==========================================")
 print()
 print("🤖 Welcome to IoT Sensor Simulation!")
-print("This program simulates the sensor readings we'll collect with real hardware next week.")
+print("This program simulates the sensor readings we'll collect with the Pico 2W this semester.")
 print()
 
 # =============================================================================
@@ -144,15 +144,15 @@ print("🚨 SENSOR ALERTS & RECOMMENDATIONS:")
 # TODO: Print alert level, status message, next check time, device_id
 print()
 
-# Closing Section (program conclusion + bridge to next week)
+# Closing Section (program conclusion + bridge to future work)
 print("==========================================")
 print("Thanks for using the Sensor Dashboard!")
-print("Next week: We'll collect REAL sensor data with the Pico 2W! 🎛️")
+print("This semester: We'll collect REAL sensor data with the Pico 2W! 🎛️")
 print("Generated on September 7, 2025")
 print("==========================================")
 
 # =============================================================================
-# BONUS IoT FEATURES (OPTIONAL) - Prepare for next week's hardware work
+# BONUS IoT FEATURES (OPTIONAL) - Prepare for semester's hardware work
 # =============================================================================
 
 # Additional sensor analysis - Energy efficiency calculation

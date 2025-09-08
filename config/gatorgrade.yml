@@ -259,7 +259,7 @@ setup: |
   check: MatchCommandFragment
   options:
     command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
-    fragment: "real hardware next week"
+    fragment: "Pico 2W this semester"
     count: 1
     exact: true
 

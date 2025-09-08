@@ -7,7 +7,7 @@
 
 ## Introduction
 
-Welcome to your first CMPSC 100 Lab! You will create a **Digital Sensor Simulation Dashboard** that introduces IoT concepts and vocabulary we will use with the Pico 2W starting next week, while practicing Python fundamentals.
+Welcome to your first CMPSC 100 Lab! You will create a **Digital Sensor Simulation Dashboard** that introduces IoT concepts and vocabulary we will use with the Pico 2W this semester, while practicing Python fundamentals.
 
 ## Learning Objectives
 
@@ -33,7 +33,7 @@ Your program should create a concise sensor dashboard like this:
 ==========================================
 
 🤖 Welcome to IoT Sensor Simulation!
-This program simulates the sensor readings we'll collect with real hardware next week.
+This program simulates the sensor readings we'll collect with the Pico 2W this semester.
 
 📊 SIMULATED SENSOR SETUP
 ==========================================
