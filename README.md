@@ -83,14 +83,18 @@ Generated on September 7, 2025
 
 ## Interactive Lab Component
 
-During the lab session, you will:
+During the 1.5-hour lab session, you will:
 
-1. **Complete your sensor simulation** 
-2. **Compare sensor readings with 3 classmates**: 
-   - Run their program with your sensor data
-   - Have them run your program with their inputs
-   - Compare which "rooms" have optimal conditions
-   - Discuss calculation approaches and status logic
+1. **Set up your development environment** and clone your repository
+2. **Work through the TODO sections systematically**:
+   - Start with the welcome message and input collection
+   - Get help from TLs on Python syntax and concepts
+   - Test your program frequently as you add each section
+3. **Participate in mini code-sharing activities**:
+   - Show a neighbor your variable naming approach for sensor data
+   - Ask a classmate about their calculation logic for temperature conversion
+   - Discuss with peers which sensor thresholds make sense for "optimal" conditions
+4. **Get hands-on help with debugging** and understanding error messages
 
 ## Technical Requirements
 
@@ -131,11 +135,18 @@ python main.py
 ## Assessment Criteria - Total: 4.5 Points
 
 ### Technical Implementation (3.0 points)
-- **Program runs without errors** (0.5 pts)
-- **All required input collection** (0.5 pts) 
-- **All required calculations work correctly** (1.0 pts)
-- **Proper type conversion used** (0.5 pts)
-- **String operations implemented** (0.5 pts)
+
+**Grading is based on GatorGrade automated checks:**
+- **33 automated checks = 3.0 points (100%)**
+- **Partial credit:** Your score = (checks passed ÷ 33) × 3.0 points
+- **Example:** 30/33 checks passed = (30÷33) × 3.0 = 2.73 points
+
+*The automated checks verify all technical requirements including:*
+- *Program execution without errors (includes file structure, syntax, runtime testing)*
+- *Input collection (6 required inputs with proper prompts)*  
+- *Calculations (arithmetic operations, temperature conversion, averages, status logic)*
+- *Type conversion (string to int conversions, int to string for output)*
+- *String operations (concatenation, slicing, method calls like .upper())*
 
 ### Code Quality and Style (1.0 point)  
 - **Descriptive variable names** (0.3 pts)

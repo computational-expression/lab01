@@ -5,6 +5,11 @@ setup: |
 
 # Digital Sensor Simulation Dashboard Lab - Gatorgrade Configuration
 # Tests Python foundations concepts with IoT bridge to future labs
+# 33 total checks = 3.0 points | Partial credit: (checks passed ÷ 33) × 3.0 points
+
+# ============================================================================
+# PROGRAM STRUCTURE AND EXECUTION CHECKS (Bullet Point 1: Program runs without errors)
+# ============================================================================
 
 # Check that main.py file exists and is properly structured
 - src/main.py:
@@ -28,6 +33,10 @@ setup: |
         language: "Python"
         count: 1
         exact: false
+
+# ============================================================================
+# INPUT COLLECTION CHECKS (Bullet Point 2: All required input collection)
+# ============================================================================
 
 # Check for Python concepts: Variables and basic Python structure with IoT focus
 - src/main.py:
@@ -62,6 +71,10 @@ setup: |
         count: 1
         exact: false
 
+# ============================================================================
+# TYPE CONVERSION CHECKS (Bullet Point 4: Proper type conversion used)
+# ============================================================================
+
 # Check for Python concepts: Type conversion for sensor data
 - src/main.py:
     - description: Use int() function for sensor reading type conversion (Python type conversion concept)
@@ -76,6 +89,10 @@ setup: |
         fragment: str(
         count: 10
         exact: false
+
+# ============================================================================
+# CALCULATIONS CHECKS (Bullet Point 3: All required calculations work correctly)
+# ============================================================================
 
 # Check for Python concepts: Arithmetic operations for sensor analysis
 - src/main.py:
@@ -104,6 +121,10 @@ setup: |
         count: 1
         exact: true
 
+# ============================================================================
+# STRING OPERATIONS CHECKS (Bullet Point 5: String operations implemented)
+# ============================================================================
+
 # Check for Python concepts: String operations for IoT device management
 - src/main.py:
     - description: Use string slicing for device naming (Python string concept)
@@ -125,6 +146,10 @@ setup: |
         count: 2
         exact: false
 
+# ============================================================================
+# SPECIFIC SENSOR CALCULATIONS (Part of Bullet Point 3: Calculations)
+# ============================================================================
+
 # Check for specific sensor calculations showing IoT understanding
 - src/main.py:
     - description: Calculate temperature conversion using proper arithmetic
@@ -145,6 +170,10 @@ setup: |
         fragment: "temp_status"
         count: 3
         exact: false
+
+# ============================================================================
+# REFLECTION AND DOCUMENTATION CHECKS
+# ============================================================================
 
 # Check reflection file for IoT learning
 - writing/reflection.md:
@@ -179,15 +208,23 @@ setup: |
         fragment: "Pico 2W"
         count: 1
         exact: false
-    - description: Include discussion of peer sensor data comparison
+    - description: Include discussion of peer interaction and lab session learning
       check: MatchFileFragment
       options:
-        fragment: "classmate"
+        fragment: "lab session"
         count: 1
         exact: false
 
+# ============================================================================
+# PROGRAM EXECUTION TESTING (Bullet Point 1: Program runs without errors)
+# ============================================================================
+
 # Test that the sensor simulation program can run without errors
-- description: Program executes without Python syntax errors
+# This test automatically provides sample sensor data to your program:
+# Device Name: "Room Monitor", Location: "dorm room", Hours: 8
+# Temperature: 72°F, Light: 450 lux, Moisture: 65%, Motion: 12 events
+# Your program should accept these inputs and produce IoT dashboard output
+- description: Program executes without Python syntax errors (with automated test inputs)
   check: CountCommandOutput
   options:
     command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
@@ -195,6 +232,8 @@ setup: |
     exact: false
 
 # Check for specific IoT output content when program runs
+# These tests use the same automated inputs as above to verify your program
+# produces the expected IoT dashboard sections and content
 - description: Program displays sensor dashboard welcome message
   check: MatchCommandFragment
   options:
@@ -218,6 +257,10 @@ setup: |
     fragment: "Pico 2W"
     count: 1
     exact: true
+
+# ============================================================================
+# REPOSITORY AND VERSION CONTROL CHECKS
+# ============================================================================
 
 # Check for git repository activity
 - description: Have at least a minimum number of commits in repository

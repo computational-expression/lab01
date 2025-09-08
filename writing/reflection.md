@@ -20,23 +20,23 @@ TODO: Write 2-3 sentences summarizing the most interesting sensor analysis your 
 - Which sensor had the most "concerning" readings that might trigger alerts?
 - What was your unique device ID and what does it represent?
 
-## 2. Peer Interaction and Sensor Data Comparison
+## 2. Peer Interaction and Lab Session Learning
 
-### Sensor Data Comparison Activity
+### Lab Session Development Experience
 
-TODO: Describe your experience during the lab session when you compared sensor readings with classmates:
+TODO: Describe your experience during the lab session working on the sensor simulation:
 
-- Which classmate had the most interesting or concerning sensor readings?
-- What creative sensor analysis or status determination did you see that impressed you?
-- How did comparing different "environments" help you understand IoT data analysis concepts?
+- What was the most helpful discussion you had with a classmate about variable naming or calculation logic?
+- Which TODO section did you find most challenging, and how did peer or TL help assist you?
+- What programming concept (input/output, type conversion, arithmetic) did you better understand through lab discussion?
 
-### Collaborative IoT Learning
+### Collaborative Programming Learning
 
-TODO: Write about how working with peers during sensor comparison helped your understanding:
+TODO: Write about how working with peers during the lab session helped your programming:
 
-- What question did a classmate ask about sensor thresholds or status that made you think differently?
-- How did explaining your sensor analysis logic to someone else help solidify your understanding?
-- What debugging help did you give or receive for sensor calculations?
+- What question did a classmate or TL ask that made you think differently about your code structure?
+- How did explaining your sensor threshold logic to someone else help solidify your understanding?
+- What debugging help did you give or receive during the hands-on lab time?
 
 ## 3. Problem Solving and Debugging in IoT Context
 
