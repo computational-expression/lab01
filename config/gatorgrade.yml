@@ -5,7 +5,7 @@ setup: |
 
 # Digital Sensor Simulation Dashboard Lab - Gatorgrade Configuration
 # Tests Python foundations concepts with IoT bridge to future labs
-# 33 total checks = 3.0 points | Partial credit: (checks passed ÷ 33) × 3.0 points
+# 32 total checks = 3.0 points | Partial credit: (checks passed ÷ 32) × 3.0 points
 
 # ============================================================================
 # PROGRAM STRUCTURE AND EXECUTION CHECKS (Bullet Point 1: Program runs without errors)
@@ -82,12 +82,6 @@ setup: |
       options:
         fragment: int(
         count: 6
-        exact: false
-    - description: Use str() function for sensor data type conversion (Python type conversion concept)
-      check: MatchFileFragment
-      options:
-        fragment: str(
-        count: 10
         exact: false
 
 # ============================================================================
@@ -211,41 +205,36 @@ setup: |
 # CODE QUALITY CHECKS - Verify specific programming concepts in main.py
 # ============================================================================
 
-# Check for type conversion (casting) in source code
-- description: Use int() function for type conversion in main.py
-  check: MatchFileFragment
-  options:
-    fragment: " int("
-    count: 5
-    exact: false
-    file: src/main.py
-
-# Check for temperature conversion formula in source code  
-- description: Include temperature conversion formula in main.py
-  check: MatchFileFragment
-  options:
-    fragment: "* 5 / 9"
-    count: 1
-    exact: false
-    file: src/main.py
-
-# Check for division calculations in source code
-- description: Include division calculations for sensor analysis in main.py
-  check: MatchFileFragment
-  options:
-    fragment: "/ monitoring_hours"
-    count: 2
-    exact: false
-    file: src/main.py
-
-# Check for string method usage in source code
-- description: Use .upper() method for string operations in main.py
-  check: MatchFileFragment
-  options:
-    fragment: ".upper()"
-    count: 2
-    exact: false
-    file: src/main.py
+# Check for specific code patterns in main.py
+- src/main.py:
+    # Check for type conversion (casting) in source code
+    - description: Use int() function for type conversion in main.py
+      check: MatchFileFragment
+      options:
+        fragment: " int("
+        count: 5
+        exact: false
+    # Check for temperature conversion formula in source code  
+    - description: Include temperature conversion formula in main.py
+      check: MatchFileFragment
+      options:
+        fragment: "* 5 / 9"
+        count: 1
+        exact: false
+    # Check for division calculations in source code
+    - description: Include division calculations for sensor analysis in main.py
+      check: MatchFileFragment
+      options:
+        fragment: "/ monitoring_hours"
+        count: 2
+        exact: false
+    # Check for string method usage in source code
+    - description: Use .upper() method for string operations in main.py
+      check: MatchFileFragment
+      options:
+        fragment: ".upper()"
+        count: 2
+        exact: false
 
 # Check for specific IoT output content when program runs
 # These tests use the same automated inputs as above to verify your program
@@ -266,11 +255,11 @@ setup: |
     count: 1
     exact: true
 
-- description: Program displays IoT next week message
+- description: Program displays IoT hardware message
   check: MatchCommandFragment
   options:
     command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
-    fragment: "Pico 2W"
+    fragment: "real hardware next week"
     count: 1
     exact: true
 

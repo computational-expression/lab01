@@ -126,9 +126,9 @@ python main.py
 ### Technical Implementation (3.0 points)
 
 **Grading is based on GatorGrade automated checks:**
-- **33 automated checks = 3.0 points (100%)**
-- **Partial credit:** Your score = (checks passed ÷ 33) × 3.0 points
-- **Example:** 30/33 checks passed = (30÷33) × 3.0 = 2.73 points
+- **32 automated checks = 3.0 points (100%)**
+- **Partial credit:** Your score = (checks passed ÷ 32) × 3.0 points
+- **Example:** 29/32 checks passed = (29÷32) × 3.0 = 2.72 points
 
 *The automated checks verify all technical requirements including:*
 - *Program execution without errors (includes file structure, syntax, runtime testing)*
