@@ -4,7 +4,7 @@ setup: |
 ---
 
 # Digital Sensor Simulation Dashboard Lab - Gatorgrade Configuration
-# Tests Python foundations concepts from Week 2-3 with IoT bridge to Week 4
+# Tests Python foundations concepts with IoT bridge to future labs
 
 # Check that main.py file exists and is properly structured
 - src/main.py:
@@ -29,96 +29,96 @@ setup: |
         count: 1
         exact: false
 
-# Check for Week 2 concepts: Variables and basic Python structure with IoT focus
+# Check for Python concepts: Variables and basic Python structure with IoT focus
 - src/main.py:
-    - description: Use input() function to collect sensor data (Week 2 concept)
+    - description: Use input() function to collect sensor data (Python input/output concept)
       check: MatchFileFragment
       options:
         fragment: input(
-        count: 5
+        count: 6
         exact: false
-    - description: Use print() function for IoT dashboard output (Week 2 concept)
+    - description: Use print() function for IoT dashboard output (Python output concept)
       check: MatchFileFragment
       options:
         fragment: print(
-        count: 15
+        count: 30
         exact: false
-    - description: Create descriptive sensor variable names following Week 2 best practices
+    - description: Create descriptive sensor variable names following Python best practices
       check: MatchFileFragment
       options:
         fragment: device_name
         count: 1
         exact: false
-    - description: Create descriptive sensor variable names following Week 2 best practices
+    - description: Create descriptive sensor variable names following Python best practices
       check: MatchFileFragment
       options:
         fragment: temperature_f
         count: 1
         exact: false
-    - description: Create descriptive sensor variable names following Week 2 best practices
+    - description: Create descriptive sensor variable names following Python best practices
       check: MatchFileFragment
       options:
         fragment: light_level
         count: 1
         exact: false
 
-# Check for Week 3 concepts: Type conversion for sensor data
+# Check for Python concepts: Type conversion for sensor data
 - src/main.py:
-    - description: Use int() function for sensor reading type conversion (Week 3 concept)
+    - description: Use int() function for sensor reading type conversion (Python type conversion concept)
       check: MatchFileFragment
       options:
         fragment: int(
-        count: 4
+        count: 6
         exact: false
-    - description: Use str() function for sensor data type conversion (Week 3 concept)
+    - description: Use str() function for sensor data type conversion (Python type conversion concept)
       check: MatchFileFragment
       options:
         fragment: str(
-        count: 2
+        count: 10
         exact: false
 
-# Check for Week 3 concepts: Arithmetic operations for sensor analysis
+# Check for Python concepts: Arithmetic operations for sensor analysis
 - src/main.py:
-    - description: Use multiplication (*) for sensor calculations (Week 3 concept)
+    - description: Use multiplication (*) for sensor calculations (Python arithmetic concept)
       check: MatchFileFragment
       options:
         fragment: "*"
         count: 3
         exact: false
-    - description: Use division (/) for sensor analysis (Week 3 concept)  
+    - description: Use division (/) for sensor analysis (Python arithmetic concept)  
       check: MatchFileFragment
       options:
         fragment: "/"
         count: 2
         exact: false
-    - description: Use addition (+) for sensor calculations (Week 3 concept)
+    - description: Use addition (+) for sensor calculations (Python arithmetic concept)
       check: MatchFileFragment
       options:
         fragment: "+"
         count: 1
         exact: false
-    - description: Use subtraction (-) for temperature conversion (Week 3 concept)
+    - description: Use subtraction (-) for temperature conversion (Python arithmetic concept)
       check: MatchFileFragment
       options:
         fragment: "temperature_f - 32"
         count: 1
         exact: true
 
-# Check for Week 3 concepts: String operations for IoT device management
+# Check for Python concepts: String operations for IoT device management
 - src/main.py:
-    - description: Use string slicing for device naming (Week 3 concept)
+    - description: Use string slicing for device naming (Python string concept)
       check: MatchFileFragment
       options:
         fragment: "[0:3]"
         count: 1
         exact: false
-    - description: Use .upper() method for sensor status (Week 3 concept)
+    - description: Use .upper() method for sensor status (Python string concept)
       check: MatchFileFragment
       options:
         fragment: .upper()
         count: 1
         exact: false
-    - description: Use string concatenation for device ID creation (Week 3 concept)
+    - description: Use string concatenation for device ID creation (Python string concept)
       check: MatchFileFragment
       options:
         fragment: device_id
@@ -143,7 +143,7 @@ setup: |
       check: MatchFileFragment
       options:
         fragment: "temp_status"
-        count: 2
+        count: 3
         exact: false
 
 # Check reflection file for IoT learning
@@ -161,23 +161,17 @@ setup: |
       options:
         count: 300
         exact: false
-    - description: Include discussion of Week 2 concepts in IoT context
+    - description: Include discussion of Python concepts in IoT context
       check: MatchFileFragment
       options:
-        fragment: "Week 2"
-        count: 1
-        exact: false
-    - description: Include discussion of Week 3 concepts in sensor context
-      check: MatchFileFragment
-      options:
-        fragment: "Week 3"
-        count: 1
+        fragment: "Python"
+        count: 2
         exact: false
     - description: Include discussion of sensor data and IoT concepts
       check: MatchFileFragment
       options:
         fragment: "sensor"
-        count: 3
+        count: 10
         exact: false
     - description: Include discussion of preparing for Pico 2W next week
       check: MatchFileFragment
@@ -191,24 +185,12 @@ setup: |
         fragment: "classmate"
         count: 1
         exact: false
-    - description: Confirm that the markdown file has appropriate headers
-      check: CountMarkdownTags
-      options:
-        tag: heading
-        count: 6
-        exact: false
-    - description: Include code examples in reflection
-      check: CountMarkdownTags
-      options:
-        tag: code_block
-        count: 3
-        exact: false
 
 # Test that the sensor simulation program can run without errors
 - description: Program executes without Python syntax errors
   check: CountCommandOutput
   options:
-    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python main.py'
+    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
     count: 25
     exact: false
 
@@ -216,7 +198,7 @@ setup: |
 - description: Program displays sensor dashboard welcome message
   check: MatchCommandFragment
   options:
-    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python main.py'
+    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
     fragment: "SENSOR SIMULATION"
     count: 1
     exact: true
@@ -224,7 +206,7 @@ setup: |
 - description: Program displays temperature analysis section
   check: MatchCommandFragment
   options:
-    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python main.py'
+    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
     fragment: "TEMPERATURE ANALYSIS"
     count: 1
     exact: true
@@ -232,7 +214,7 @@ setup: |
 - description: Program displays IoT next week message
   check: MatchCommandFragment
   options:
-    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python main.py'
+    command: 'cd src && echo -e "Room Monitor\ndorm room\n8\n72\n450\n65\n12" | python3 main.py'
     fragment: "Pico 2W"
     count: 1
     exact: true

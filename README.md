@@ -3,16 +3,16 @@
 [![build](../../actions/workflows/build.yml/badge.svg)](../../actions/)
 ![Platforms: Linux, MacOS, Windows](https://img.shields.io/badge/Platform-Linux%20%7C%20MacOS%20%7C%20Windows-blue.svg)
 [![Language: Python](https://img.shields.io/badge/Language-Python-blue.svg)](https://www.python.org/)
-[![Discord](https://img.shields.io/discord/872320492936257537?logo=discord)](https://discord.gg/kjah8MFYbR)
+[![Discord](https://img.shields.io/discord/872320492936257537?logo=discord)](https://discord.gg/mfrngq3S)
 
 ## Introduction
 
-Welcome to your first CMPSC 100 Lab! You'll create a **Digital Sensor Simulation Dashboard** that introduces IoT concepts and vocabulary we'll use with the Pico 2W next week, while practicing Python fundamentals.
+Welcome to your first CMPSC 100 Lab! You will create a **Digital Sensor Simulation Dashboard** that introduces IoT concepts and vocabulary we will use with the Pico 2W starting next week, while practicing Python fundamentals.
 
 ## Learning Objectives
 
-Practice **Week 2-3 Python concepts** through IoT simulation:
-- **Variables & Data Types**: Working with int, float, str, bool for sensor data
+Practice **Python programming concepts** through IoT simulation:
+- **Variables & Data Types**: Working with `int`, `float`, `str`, `bool` for sensor data
 - **Arithmetic Operations**: Using +, -, *, /, //, %, ** for calculations  
 - **String Operations**: Concatenation, formatting for dashboard display
 - **Type Conversion**: Converting between data types for sensor input
@@ -33,7 +33,7 @@ This program simulates the sensor readings we'll collect with real hardware next
 
 📊 SIMULATED SENSOR SETUP
 ==========================================
-Device Name: Alice's Room Monitor
+Device Name: Jasmine's Room Monitor
 Location: dorm room
 Monitoring Duration (hours): 8
 Temperature Sensor Reading: 72
@@ -83,7 +83,7 @@ Generated on September 7, 2025
 
 ## Interactive Lab Component
 
-During the lab session, you'll:
+During the lab session, you will:
 
 1. **Complete your sensor simulation** 
 2. **Compare sensor readings with 3 classmates**: 
@@ -153,10 +153,10 @@ python main.py
 During lab sessions, you will verbally explain your own code or a peer's code. In addition to describing what the code does and how it works, you will answer conceptual questions related to your code to demonstrate understanding of underlying programming concepts. This helps develop both communication skills and conceptual mastery.
 
 ### Topics You May Need to Explain:
-- **Variable types and naming conventions** for sensor data (Week 2 concepts)
-- **Arithmetic operations** used in sensor calculations like temperature conversion, averages, percentages (Week 3 concepts) 
-- **String operations** for device IDs, status messages, and dashboard formatting (Week 3 concepts)
-- **Type conversion** between strings and numbers for sensor data processing (Week 3 concepts)
+- **Variable types and naming conventions** for sensor data (Python programming concepts)
+- **Arithmetic operations** used in sensor calculations like temperature conversion, averages, percentages (Python programming concepts) 
+- **String operations** for device IDs, status messages, and dashboard formatting (Python programming concepts)
+- **Type conversion** between strings and numbers for sensor data processing (Python programming concepts)
 - **Program logic** and flow for IoT simulation and sensor analysis
 
 ## Submission Instructions
@@ -191,9 +191,9 @@ git push
 ### Outside Lab  
 - Post questions in Discord
 - Attend office hours for one-on-one help
-- Review the Week 2 and Week 3 slides for concept reinforcement
+- Review the Python programming slides for concept reinforcement
 
 ### Resources
 - [Python Documentation](https://docs.python.org/3/)
-- Course slides: Week 2 (Python Basics) and Week 3 (Variables, Data Types, Operations)
+- Course slides: Python Basics and Variables, Data Types, Operations
 - Examples from class activities

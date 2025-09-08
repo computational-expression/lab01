@@ -27,10 +27,6 @@ jobs:
           uses: actions/checkout@v2
           with:
             fetch-depth: 0
-        # Run the mdl linting tool
-        # Refers to .mdlrc file in repository
-        - name: Run Markdown Linting
-          uses: actionshub/markdownlint@main
         # Setup Python for the current language version
         - name: Setup Python ${{ matrix.python-version }}
           if: always()
@@ -42,20 +38,12 @@ jobs:
           if: always()
           run: |
             pip install -U pip
-        # Install poetry
-        - name: Install Poetry
-          if: always()
-          uses: abatilo/actions-poetry@v2.0.0
-          with:
-            poetry-version: 1.6.1
         # Run the Python program
         - name: Run Python Program
           if: always()
           run: |
-            cd square
-            poetry install
-            poetry run square --approach for --directory input --file numbers.txt
-            poetry run square --approach while --directory input --file numbers.txt
+            cd src
+            echo -e "Test Monitor\nlab room\n8\n72\n450\n65\n12" | python3 main.py
         # Run GatorGrader: see config/gatorgrade.yml
         - name: Run GatorGrader with GatorGrade
           if: always()

@@ -54,7 +54,7 @@ TODO: Describe the most difficult sensor analysis issue you encountered:
 TODO: Reflect on your problem-solving process for sensor simulation:
 
 - How has your approach to debugging sensor calculations improved?
-- What will you do differently when we start working with real sensors next week?
+- What will you do differently when we start working with real sensors in the next lab?
 
 ## 4. Creative Expression and IoT Extensions
 
@@ -68,9 +68,9 @@ TODO: Describe the creative elements you added to make your sensor dashboard uni
 
 ### Future IoT Improvements
 
-TODO: If you had more time, what additional sensor features would you add? How might you use the conditional statements we're learning next week to make smarter sensor decisions?
+TODO: If you had more time, what additional sensor features would you add? How might you use the conditional statements we're learning next to make smarter sensor decisions?
 
-## 5. Bridge to Next Week: Real Hardware with Pico 2W
+## 5. Bridge to Next Lab: Real Hardware with Pico 2W
 
 ### Preparing for Physical Sensors
 
@@ -82,7 +82,7 @@ TODO: Reflect on how this simulation prepared you for working with the Pico 2W:
 
 ### Excitement for Conditionals and Hardware
 
-TODO: Write about what you're most excited to try next week:
+TODO: Write about what you're most excited to try in the next lab:
 
 - Which type of real sensor (temperature, light, moisture, motion) interests you most?
 - How do you think conditional statements (if/else) will improve your sensor analysis?
@@ -92,7 +92,7 @@ TODO: Write about what you're most excited to try next week:
 
 ### Python Programming Fundamentals (LO1)
 
-TODO: Explain how this IoT simulation lab helped you practice Python fundamentals from Week 2-3. Which concepts do you feel most confident about for sensor programming? Which need more practice?
+TODO: Explain how this IoT simulation lab helped you practice Python fundamentals. Which concepts do you feel most confident about for sensor programming? Which need more practice?
 
 ### Industry-Standard Practices (LO2)
 
@@ -109,4 +109,4 @@ TODO: Write 2-3 sentences about the most important thing you learned from this s
 
 ### Preparation for Hardware Labs
 
-TODO: How do you think the sensor simulation concepts from this lab will help you when we start using real Pico 2W hardware next week? What foundation has this lab provided for physical computing projects?
+TODO: How do you think the sensor simulation concepts from this lab will help you when we start using real Pico 2W hardware in the next lab? What foundation has this lab provided for physical computing projects?
