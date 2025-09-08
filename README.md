@@ -20,6 +20,10 @@ Practice **Python programming concepts** through IoT simulation:
 
 *This assignment aligns with CMPSC 100 Learning Outcomes 1 and 2, focusing on Python programming fundamentals and industry-standard practices. It also introduces IoT concepts that prepare students for physical computing with the Pico 2W in upcoming labs.*
 
+**� Note**: This lab uses two additional functions:
+- `round(number, places)` - rounds decimals (e.g., `round(22.666, 1)` → `22.7`)
+- `string.upper()` - converts to uppercase (e.g., `"normal".upper()` → `"NORMAL"`)
+
 ### Sample Output
 
 Your program should create a concise sensor dashboard like this:
@@ -51,7 +55,7 @@ Temperature in Celsius: 22.2°C
 Status: NORMAL (within 68-78°F range)
 Hours above 75°F: 2 hours
 
-� LIGHT SENSOR ANALYSIS:
+💡 LIGHT SENSOR ANALYSIS:
 Light Level: 450 lux
 Status: BRIGHT (above 400 lux threshold)
 Percentage of daylight: 75%
@@ -63,13 +67,13 @@ Status: OPTIMAL (50-70% range)
 Watering needed: NO
 Days since last watering: 2
 
-� MOTION SENSOR ANALYSIS:
+🏃 MOTION SENSOR ANALYSIS:
 Motion events: 12 detections
 Average per hour: 1.5 detections/hour
 Peak activity hour: Hour 7 (3 detections)
 Room occupancy: ACTIVE
 
-� SENSOR ALERTS & RECOMMENDATIONS:
+🚨 SENSOR ALERTS & RECOMMENDATIONS:
 Alert Level: LOW
 All sensors within normal ranges
 Next check recommended: 4 hours
@@ -80,21 +84,6 @@ Thanks for using the Sensor Dashboard!
 Generated on September 7, 2025
 ==========================================
 ```
-
-## Interactive Lab Component
-
-During the 1.5-hour lab session, you will:
-
-1. **Set up your development environment** and clone your repository
-2. **Work through the TODO sections systematically**:
-   - Start with the welcome message and input collection
-   - Get help from TLs on Python syntax and concepts
-   - Test your program frequently as you add each section
-3. **Participate in mini code-sharing activities**:
-   - Show a neighbor your variable naming approach for sensor data
-   - Ask a classmate about their calculation logic for temperature conversion
-   - Discuss with peers which sensor thresholds make sense for "optimal" conditions
-4. **Get hands-on help with debugging** and understanding error messages
 
 ## Technical Requirements
 
@@ -155,13 +144,10 @@ python main.py
 
 ### Reflection and Engagement (0.5 points)
 - **Thoughtful reflection** on learning and IoT concepts
-- **Evidence of peer interaction** during lab
 
 ## Code Review (Separate Grading Component)
 
-**This is a separate grading component: 2.2 points per code review × 9 reviews = 20 points total. Not part of the 4.5-point lab grade.**
-
-During lab sessions, you will verbally explain your own code or a peer's code. In addition to describing what the code does and how it works, you will answer conceptual questions related to your code to demonstrate understanding of underlying programming concepts. This helps develop both communication skills and conceptual mastery.
+**This is a separate grading component: 2.2 points per code review. Not part of the 4.5-point lab grade. See the syllabus for more details.**
 
 ### Topics You May Need to Explain:
 - **Variable types and naming conventions** for sensor data (Python programming concepts)
@@ -178,7 +164,7 @@ Submit to GitHub frequently! The version submitted last before the due date will
 ```bash
 
 # Add your completed files
-git add src/main.py writing/reflection.md
+git add src/main.py writing/reflection.md or git add .
 
 # Commit with a descriptive message
 git commit -m "Complete sensor simulation dashboard"
@@ -195,16 +181,17 @@ git push
 ## Getting Help
 
 ### During Lab
-- Ask TLs or instructor for help with specific coding issues
+- Ask TLs or instructor for help with specific questions or issues
 - Work with classmates on understanding concepts (but write your own code)
-- Use the lab time to test and refine your program
+- Use the lab time to understand the requirements and get started with your program
 
 ### Outside Lab  
 - Post questions in Discord
-- Attend office hours for one-on-one help
+- Attend 
+- Attend [TL office hours](https://www.cis.allegheny.edu/teaching/technicalleaders/) and/or [instructor office hours](https://janyljumadinova.com/schedule/) to seek help outside of class
 - Review the Python programming slides for concept reinforcement
 
 ### Resources
 - [Python Documentation](https://docs.python.org/3/)
-- Course slides: Python Basics and Variables, Data Types, Operations
+- Course slides: [Python Basics](https://computational-expression.github.io/course_information/week02/python_basics.html), [Types & Operations](https://computational-expression.github.io/course_information/week03/types_operations.html)
 - Examples from class activities

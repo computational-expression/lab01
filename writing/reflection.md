@@ -27,7 +27,7 @@ TODO: Write 2-3 sentences summarizing the most interesting sensor analysis your 
 TODO: Describe your experience during the lab session working on the sensor simulation:
 
 - What was the most helpful discussion you had with a classmate about variable naming or calculation logic?
-- Which TODO section did you find most challenging, and how did peer or TL help assist you?
+- Which assignment section did you find most challenging, and how did peer or TL help assist you?
 - What programming concept (input/output, type conversion, arithmetic) did you better understand through lab discussion?
 
 ### Collaborative Programming Learning
