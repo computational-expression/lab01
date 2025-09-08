@@ -20,7 +20,7 @@ Practice **Python programming concepts** through IoT simulation:
 
 *This assignment aligns with CMPSC 100 Learning Outcomes 1 and 2, focusing on Python programming fundamentals and industry-standard practices. It also introduces IoT concepts that prepare students for physical computing with the Pico 2W in upcoming labs.*
 
-**� Note**: This lab uses two additional functions:
+** Note**: This lab uses two additional functions:
 - `round(number, places)` - rounds decimals (e.g., `round(22.666, 1)` → `22.7`)
 - `string.upper()` - converts to uppercase (e.g., `"normal".upper()` → `"NORMAL"`)
 
@@ -46,7 +46,7 @@ Soil Moisture Reading: 65
 Motion Detected Count: 12
 
 ==========================================
-� SENSOR DATA ANALYSIS
+📊 SENSOR DATA ANALYSIS
 ==========================================
 
 🌡️ TEMPERATURE ANALYSIS:
